@@ -1,11 +1,6 @@
 import { defineManifest } from "@crxjs/vite-plugin";
 import { version } from "./package.json";
 
-// NOTE: do not include src/ in paths,
-// vite root folder: src, public folder: public (based on the project root)
-// @see ../vite.config.ts#L16
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const manifest = defineManifest(async (_env) => ({
   manifest_version: 3,
   name: "Browser Extension",
@@ -37,17 +32,17 @@ const manifest = defineManifest(async (_env) => ({
   // action: {
   //   // default_popup: "src/app/popup/popup.html",
   //   default_icon: {
-  //     "16": "images/extension-16.png",
-  //     "32": "images/extension-32.png",
-  //     "48": "images/extension-48.png",
-  //     "128": "images/extension-128.png",
+  //     "16": "images/16.png",
+  //     "32": "images/32.png",
+  //     "48": "images/48.png",
+  //     "128": "images/128.png",
   //   },
   // },
   icons: {
-    "16": "images/extension-16.png",
-    "32": "images/extension-32.png",
-    "48": "images/extension-48.png",
-    "128": "images/extension-128.png",
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "128": "images/128.png",
   },
   permissions: [
     // "storage",
